@@ -3,7 +3,7 @@ import ApiError from "../utils/ApiError.js"
 import ApiRes from "../utils/ApiResponce.js"
 import { Types } from "mongoose"
 import { Income } from "../models/Income.model.js"
-import { Expense } from "../models/Expense.model.js"
+import { Expense } from "../models/expense.model.js"
 
 
 const getDashboardData = AssyncHandler(async (req, res) => {
