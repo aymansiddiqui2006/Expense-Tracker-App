@@ -2,7 +2,7 @@ import ExcelJS from "exceljs"
 import AssyncHandler from "../utils/AssyncHandler.js"
 import ApiError from "../utils/ApiError.js"
 import ApiRes from "../utils/ApiResponce.js"
-import { Expense } from "../models/Expense.model.js"
+import { Expense } from "../models/expense.model.js"
 
 const addExpense = AssyncHandler(async (req, res) => {
     const userId = req.user?._id
