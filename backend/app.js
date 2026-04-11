@@ -15,7 +15,7 @@ const app=express()
 
 app.use(cors({
     origin:process.env.CLIENT_URL ||"https://expense-tracker-app-4dpz.onrender.com"|| "*",
-    allowedHeades:["content-Type","Authorization"],
+    allowedHeaders: ["Content-Type", "Authorization"],
 }))
 
 app.use(express.json());
