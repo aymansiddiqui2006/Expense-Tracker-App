@@ -82,7 +82,7 @@ export default function Signin() {
       // Optional: redirect to login
       toast.success("Signup successful!");
       navigate("/login");
-      return ;
+      return;
 
     } catch (error) {
       console.log("FULL ERROR:", error);
@@ -111,7 +111,8 @@ export default function Signin() {
         <form onSubmit={HandleSubmit} className="flex flex-col gap-4">
 
           <ProfilePhotoSelector image={profilePic} setImage={setProfilePic} />
-
+          <div className='text-gray-600 text-lg'>Profile photo upload is currently disabled</div>
+          <div className='text-gray-600 text-sm'>This feature will be available soon</div>
           <div className="grid grid-cols-2 gap-6 w-full ">
 
             {/* Full Name */}
@@ -168,8 +169,8 @@ export default function Signin() {
 
         </form>
 
-      </div>
+      </div >
 
-    </AuthLayout>
+    </AuthLayout >
   )
 }
