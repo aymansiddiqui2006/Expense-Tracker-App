@@ -14,7 +14,7 @@ const __dirname = path.dirname(__filename);
 const app=express()
 
 app.use(cors({
-    origin:process.env.CLIENT_URL || "*",
+    origin:process.env.CLIENT_URL ||"https://expense-tracker-app-4dpz.onrender.com"|| "*",
     allowedHeades:["content-Type","Authorization"],
 }))
 
